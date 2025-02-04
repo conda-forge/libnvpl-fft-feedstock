@@ -57,14 +57,14 @@ Current release info
 Installing libnvpl-fft
 ======================
 
-Installing `libnvpl-fft` from the `conda-forge` channel can be achieved by adding `conda-forge` to your channels with:
+Installing `libnvpl-fft` from the `conda-forge/label/nvpl_rc` channel can be achieved by adding `conda-forge/label/nvpl_rc` to your channels with:
 
 ```
-conda config --add channels conda-forge
+conda config --add channels conda-forge/label/nvpl_rc
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `libnvpl-fft-dev, libnvpl-fft0` can be installed with `conda`:
+Once the `conda-forge/label/nvpl_rc` channel has been enabled, `libnvpl-fft-dev, libnvpl-fft0` can be installed with `conda`:
 
 ```
 conda install libnvpl-fft-dev libnvpl-fft0
@@ -79,26 +79,26 @@ mamba install libnvpl-fft-dev libnvpl-fft0
 It is possible to list all of the versions of `libnvpl-fft-dev` available on your platform with `conda`:
 
 ```
-conda search libnvpl-fft-dev --channel conda-forge
+conda search libnvpl-fft-dev --channel conda-forge/label/nvpl_rc
 ```
 
 or with `mamba`:
 
 ```
-mamba search libnvpl-fft-dev --channel conda-forge
+mamba search libnvpl-fft-dev --channel conda-forge/label/nvpl_rc
 ```
 
 Alternatively, `mamba repoquery` may provide more information:
 
 ```
 # Search all versions available on your platform:
-mamba repoquery search libnvpl-fft-dev --channel conda-forge
+mamba repoquery search libnvpl-fft-dev --channel conda-forge/label/nvpl_rc
 
 # List packages depending on `libnvpl-fft-dev`:
-mamba repoquery whoneeds libnvpl-fft-dev --channel conda-forge
+mamba repoquery whoneeds libnvpl-fft-dev --channel conda-forge/label/nvpl_rc
 
 # List dependencies of `libnvpl-fft-dev`:
-mamba repoquery depends libnvpl-fft-dev --channel conda-forge
+mamba repoquery depends libnvpl-fft-dev --channel conda-forge/label/nvpl_rc
 ```
 
 
